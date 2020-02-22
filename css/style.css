@@ -1,0 +1,225 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+section{
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(120deg, rgba(18, 19, 25,0.9),rgba(18, 28, 91,0.9));
+	position: relative;
+	overflow: hidden;
+}
+
+
+.timebg{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 610px;
+	height: 630px;
+}
+.time_sloi,
+.time_sloi1,
+.time_sloi2,
+.time_sloi3,
+.time_sloi4,
+.time_sloi5,
+.time_sloi6,
+.time_sloi7,
+.time_sloi8,
+.time_sloi9{
+	position: absolute;
+}
+.time_sloi,
+.time_sloi1,
+.time_sloi4,
+.time_sloi8,
+.time_sloi9{
+	animation: time_go 20s linear infinite;
+	-moz-animation: time_go  20s linear infinite;
+	-o-animation: time_go  20s linear infinite;
+	-webkit-animation: time_go  20s linear infinite;
+
+}
+.time_sloi3{
+
+animation: time_back 20s linear infinite;
+	-moz-animation: time_back  20s linear infinite;
+	-o-animation: time_back  20s linear infinite;
+	-webkit-animation: time_back  20s linear infinite;
+
+}
+.time_sloi6,
+.time_sloi2{
+	animation: time_go 1s linear infinite;
+	-moz-animation: time_go  1s linear infinite;
+	-o-animation: time_go  1s linear infinite;
+	-webkit-animation: time_go  1s linear infinite;
+}
+
+/*################################################*/
+
+.time_sloi{
+	top: 123px;
+    left: 392px;
+	z-index: 2;
+}
+.time_sloi img{
+	width: 130px;
+	height: 130px;
+}
+/*################################################*/
+.time_sloi1{
+	top: 412px;
+    left: 336px;
+	z-index: 1;
+}
+.time_sloi1 img{
+	width: 120px;
+	height: 120px;
+}
+
+/*################################################*/
+
+
+
+.time_sloi2{
+	top: 397px;
+    left: 229px;
+	z-index: 2;
+}
+/*################################################*/
+
+.time_sloi3{
+	top: 408px;
+    left: 249px;
+	z-index: 3;
+
+}
+.time_sloi3 img{
+	width: 100px;
+	height: 100px;
+}
+/*################################################*/
+
+.time_sloi4{
+	top: 298px;
+    left: 69px;
+	z-index: 4;
+
+}
+.time_sloi4 img{
+	width: 170px;
+	height: 170px;
+}
+
+/*################################################*/
+
+.time_sloi5{
+
+	z-index: 5;
+}
+/*################################################*/
+
+.time_sloi6{
+	top: 174px;
+    left: 435px;
+	z-index: 6;		
+}
+
+/*################################################*/
+
+
+.time_sloi7{
+	top: 491px;
+    left: 227px;
+    z-index: 6;
+    transform: rotate(15deg);
+
+}
+.time_sloi7 img{
+	height: 71px;
+    width: 142px;
+		
+}
+
+/*################################################*/
+
+.time_sloi8{
+	z-index: 2;
+	top: 97px;
+    left: 106px;
+
+}
+.time_sloi8 img{
+		height: 120px;
+		width: 120px;
+	}
+
+/*################################################*/
+
+.time_sloi9{
+	z-index: 1;
+	top: 153px;
+    left: 60px;
+
+}
+.time_sloi9 img{
+	width: 150px;
+	height: 150px;
+	}
+
+
+
+@keyframes time_go{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+
+
+@keyframes time_back{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(-360deg);}
+}
